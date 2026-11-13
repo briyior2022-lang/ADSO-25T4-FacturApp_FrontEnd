@@ -1,0 +1,53 @@
+
+{% extends 'layout.html' %}
+
+{% block content %}
+<h1>New User</h1>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+          <div id="nameHelp" class="form-text">Write your full name.</div>
+        </div>
+        <div class="mb-3">
+          <label for="idType" class="form-label">Identification type</label>
+          <select class="form-select" aria-label="idTypeHelp">
+            <option selected>Select your identification type</option>
+            <option value="CC">CC</option>
+            <option value="TI">TI</option>
+            <option value="CE">CE</option>
+            <option value="PA">PAS</option>
+          </select>
+          <div id="idTypeHelp" class="form-text">Write your identification number.</div>
+        </div>
+        <div class="mb-3">
+          <label for="idNumber" class="form-label">Identification Number</label>
+          <input type="text" class="form-control" id="adress" aria-describedby="idNumberHelp" placeholder="only numbers">
+          <div id="idNumberHelp" class="form-text">Write your identification number.</div>
+        </div>
+        <div class="mb-3">
+          <label for="rol/cargo" class="form-label">Rol/Cargo</label>
+          <select class="form-select" aria-label="rol/cargo">
+            <option selected>Select the Rol/Cargo</option>
+            <option value="Administrador">Administrador</option>
+            <option value="Cajero">Cajero</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="Email_adress" class="form-label">Email Adress</label>
+          <input type="text" class="form-control" id="Email_adress" aria-describedby="Email_adressHelp" placeholder="example@dominio.com">
+          <div id="Email_adressHelp" class="form-text">Write your email adress.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword" aria-describedby="passwordHelp">
+          <div id="passwordHelp" class="form-text">Write your password.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputConfirmPassword" class="form-label">Password Confirmation</label>
+          <input type="password" class="form-control" id="exampleInputConfirmPassword" aria-describedby="passwordHelp">
+          <div id="passwordHelp" class="form-text">Write your password again.</div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+{% endblock %}
